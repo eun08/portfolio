@@ -1,0 +1,24 @@
+#wrap{}
+
+
+
+
+
+/*********************section****************************/
+
+#main {max-width: 1280px; margin: 0 auto;}
+#main .container { display: grid;
+                   grid-template-columns: 1fr 1fr 1fr;
+                   grid-gap: .25rem;}
+#main .container .works_item div {width: 100%;}
+#main .container .works_item .loaded {position: relative;}                   
+#main .container .works_item .loaded p{
+      position: absolute;
+      left: 0; bottom: 0;
+      font-family: 'GmarketSansBold';
+}
+#main .container .works_item .loaded p > span{
+      font-family: 'GmarketSansLight';
+}
+
+
