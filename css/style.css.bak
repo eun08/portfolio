@@ -1,13 +1,9 @@
-   	.container{max-width:1280px;margin:0 auto; padding-top: 45px; padding-bottom: 45px;}
-		.row{display:flex;flex-wrap:wrap;justify-content:start}
-		.row > div{width:calc((100% - 8px) / 3);margin-right:4px;}
-		.row > div:nth-child(3n){margin-right:0}
 
 #fh5co-work {
   overflow: hidden;
   position: relative;
   color: rgba(255, 255, 255, 0.8);
-  /*background-color: #f37d6b*/
+  background-color: #f37d6b
   /*background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIHN0b3AtY29sb3I9IiMzZjk1ZWEiIHN0b3Atb3BhY2l0eT0iMSIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzUyZDNhYSIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjEiLz48L2xpbmVhckdyYWRpZW50PjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjdnNnZykiIC8+PC9zdmc+);
   background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0, #3f95ea), color-stop(1, #52d3aa));*/
   /* Android 2.3 */
@@ -23,7 +19,6 @@
 #fh5co-work a:hover {
   color: white;
 }
-/*
 #fh5co-work:before, #fh5co-work:after {
   position: absolute;
   transform: rotate(-1.7deg);
@@ -39,18 +34,14 @@
   padding: 0;
   width: 101%;
 }
-*/
-/*
 #fh5co-work:before {
   top: 0;
   margin-top: -35px;
 }
-
 #fh5co-work:after {
   bottom: 0;
   margin-bottom: -35px;
 }
-*/
 #fh5co-work .section-heading h2 {
   color: #fff;
 }
@@ -68,20 +59,17 @@
   background: #fff;
   overflow: hidden;
   z-index: 9;
-  margin-bottom: 4px;
-    /*
+  margin-bottom: 30px;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   border-radius: 7px;
-  */
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
 
 #fh5co-work .fh5co-project-item img {
-  width: 100%;
   z-index: 8;
   opacity: 1;
   -webkit-transition: 0.3s;
@@ -89,9 +77,6 @@
   transition: 0.3s;
 }
 #fh5co-work .fh5co-project-item .fh5co-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   padding: 10px 20px;
 }
 #fh5co-work .fh5co-project-item .fh5co-text h2, #fh5co-work .fh5co-project-item .fh5co-text span {

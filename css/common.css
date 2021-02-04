@@ -83,7 +83,8 @@ button{outline:0}
          margin-bottom: 40px;
          position: relative;
          outline: 1px solid red;}
-#header #nav {float: right;}
+#header #nav { position: fixed; right: 50%; margin-right: -640px;
+               z-index: 10;}
 #header #nav:after {content:''; display: block; clear: both;}
 #header #nav p {display: block; float: left; 
                 padding-right: 10px; margin-right: 10px;
@@ -94,12 +95,15 @@ button{outline:0}
               width: 3px; height: 13px; background-color: #222;
               transform:translate(15px,1px);}        
 #header #nav ul {float: right;}
+#header #nav .gnb {}
 #header #nav .gnb li {float: left; padding-left:20px;}
 #header #nav .gnb li.active {color: #222;}
 #header #nav ul.gnb:first-child(1){padding-left: 10px;}
 
 #header .tag_box {position: absolute;
-                 right: 0; bottom: 0;} 
+                 right: 0; bottom: 0;
+                 height: 32px;
+                 } 
 #header .tag_box ul {float: right;}
 #header .tag_box li {float: left; padding-left: 20px;}
 #header .tag_box li:before {content:'.'; display: inline-block;
@@ -107,7 +111,10 @@ button{outline:0}
 #header .tag_box li:first-child::before{display: none;}                     
 #header .tag_box > ul > li.active{color: #222;}
 
-
+#wrap .tag_box_fixed .tag_box {position: fixed;
+                         top: 80px;
+                         right: 50%;  margin-right: -640px;
+                         z-index: 10;}
 
 
 
