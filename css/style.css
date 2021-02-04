@@ -123,3 +123,10 @@
   text-decoration: none !important;
 }
 
+/*******************************sub_aboutMe**********************************************/
+
+section {width: 100%;  height: 100%;}
+#about .container {display: flex;
+                  align-content: flex-start;}
+#about .container div {width: 100%; height: 424px;
+                       outline: 1px solid red;}

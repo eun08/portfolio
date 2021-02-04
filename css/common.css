@@ -82,13 +82,13 @@ button{outline:0}
          padding-top: 40px;
          margin-bottom: 40px;
          position: relative;
-         outline: 1px solid red;}
+         }
 #header #nav { position: fixed; right: 50%; margin-right: -640px;
                z-index: 10;}
 #header #nav:after {content:''; display: block; clear: both;}
 #header #nav p {display: block; float: left; 
                 padding-right: 10px; margin-right: 10px;
-                font-family: GmarketSansBold    ;
+                font-family: 'GmarketSansBold' ;
                 color: #222;
                 }
 #header #nav p:after {content:''; display: inline-block;
