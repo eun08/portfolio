@@ -14,11 +14,28 @@ $(function(){
 
     })//nav click
 
+    $('.gnb > li > a.about,a.contact').click(function(){        
+        $('#wrap').addClass('active');
+    })
+
+    $('.gnb > li > a.works').click(function(){
+        $('#wrap').removeClass('active');
+    })
+
+
+
+
     $('.tag_box ul > li > a').click(function(){
         $('.tag_box ul > li > a').removeClass('on');
         $(this).addClass('on');
 
     })//tag click
+
+
+    
+
+
+
 
 
 

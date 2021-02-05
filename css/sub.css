@@ -1,0 +1,9 @@
+section {width: 100%;  height: 100%;}
+#about .container {display: flex;
+                  flex-direction: column;
+                  box-sizing: border-box;
+                  padding-top: 0;}
+#about .container div {width: 100%; height: 638px;
+                       margin-bottom: 4px;
+                       background-color: #fff;}
+#about .container div img {width: 100%;}
