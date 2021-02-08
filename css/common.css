@@ -106,23 +106,7 @@ button{outline:0}
 #header #nav .gnb > li > a.on {color: #222;}
 #header #nav .gnb a:hover{color: #222;}
 
-#header .tag_box {position: absolute;
-                 right: 0; bottom: 0;
-                 height: 32px;
-                 } 
-#header .tag_box ul {float: right;}
-#header .tag_box li {float: left; padding-left: 20px;}
-#header .tag_box li:before {content:'.'; display: inline-block;
-                            transform:translate(-10px, -5px);}
-#header .tag_box li:first-child::before{display: none;}                     
-#header .tag_box > ul > li> a.on{color: #222;}
-#header .tag_box > ul > li a:hover {color: #222;}
 
-
-#wrap .tag_box_fixed .tag_box {position: fixed;
-                         top: 80px;
-                         right: 50%;  margin-right: -640px;
-                         z-index: 10;}
 
 
 

@@ -80,6 +80,15 @@
   transition: 0.3s;
 }
 
+#fh5co-work .gallery .hide {
+  width: 0%;
+  opacity: 0;
+  transition: all 0.1s;
+}
+
+
+
+
 #fh5co-work .fh5co-project-item img {
   width: 100%;
   z-index: 8;
@@ -131,14 +140,21 @@
   text-decoration: none !important;
 }
 
-/*******************************sub_aboutMe**********************************************/
-#wrap {transition: 2s;}
-#wrap.active {background-color:#F5E2FE;}
-#wrap #div3 {text-align: center;}
-#wrap #div3 span {margin-left: 10px;}
-        
-/*******************************sub_bx**********************************************/
-#bx .container {display: flex;
-                justify-content: center;}
-#bx .container p {width: 62.5%;}
-#bx .container p img {width: 100%;}
+/**********filter***********/
+#header .tag_box {position: absolute;
+  right: 0; bottom: 0;
+  height: 32px;
+  } 
+#header .tag_box ul {float: right;}
+#header .tag_box li {float: left; padding-left: 20px;}
+#header .tag_box li:before {content:'.'; display: inline-block;
+             transform:translate(-10px, -5px);}
+#header .tag_box li:first-child::before{display: none;}                     
+#header .tag_box > ul > li> a.on{color: #222;}
+#header .tag_box > ul > li a:hover {color: #222;}
+
+
+#wrap .tag_box_fixed .tag_box {position: fixed;
+          top: 80px;
+          right: 50%;  margin-right: -640px;
+          z-index: 10;}
