@@ -13,6 +13,7 @@
 
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+
   <!-- 시간차로 올라옴 -->
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/jquery.stellar.min.js"></script>
@@ -22,6 +23,10 @@
 	<!-- Main JS (Do not remove) -->
 	<script src="js/common.js"></script>
 	<script src="js/main.js"></script>
+	<!-- filterizr -->
+	<script type="text/javascript" src="js/jquery.filterizr.min.js"></script>
+
+
 	
 
 	<!-- FOR IE9 below -->
@@ -49,20 +54,21 @@
 			  </nav>  
 			  <div class="tag_box">
 				<ul>
-				  <li><a herf="#" class="on">ALL</a></li>
-				  <li><a herf="#">WEB</a></li>
-				  <li><a herf="#">BX</a></li>
-				  <li><a herf="#">GRAPHIC</a></li>
-				  <li><a herf="#">ARTWORK</a></li>
+				  <!--for filtering controls-->
+				  <li data-filter="all"><a herf="#" class="on">ALL</a></li>
+				  <li data-filter="banner"><a herf="#">BANNER</a></li>
+				  <li data-filter="poster"><a herf="#">POSTER</a></li>
+				  <li data-filter="logo"><a herf="#">LOGO</a></li>
+				  <li data-filter="composite"><a herf="#">COMPOSITE</a></li>
+				  <li data-filter="artwork"><a herf="#">ARTWORK</a></li>
 				</ul>
 			  </div>
 		</header>	
 	<section id="fh5co-work" data-section="portfolio">
 		<div class="container">
-
-			<div class="row row-bottom-padded-sm">
-				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="images/work/bx/works_item_15_detail.jpg" class="fh5co-project-item image-popup to-animate">
+			<div class="row row-bottom-padded-sm filter-container">
+				<div class="col-md-4 col-sm-6 col-xxs-12 filter-item" data-category="bx" data-sort="value">
+					<a href="https://eun08.github.io/portfolio/sub_bx.html" class="fh5co-project-item to-animate">
 						<img src="images/work/bx/works_item_15.jpg" alt="신한로고" class="img-responsive">
 						<div class="fh5co-text">
 						<h2>신한화구</h2>
@@ -70,7 +76,7 @@
 						</div>
 					</a>
 				</div><!--1-->
-				<div class="col-md-4 col-sm-6 col-xxs-12">
+				<div class="col-md-4 col-sm-6 col-xxs-12 filter-item" data-category="banner" data-sort="value">
 					<a href="images/work/graphic/works_item_11_detail.png" class="fh5co-project-item image-popup to-animate">
 						<img src="images/work/graphic/works_item_11.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
@@ -80,7 +86,7 @@
 					</a>
 				</div><!--2-->
 
-				<div class="col-md-4 col-sm-6 col-xxs-12">
+				<div class="col-md-4 col-sm-6 col-xxs-12 filter-item" data-category="logo" data-sort="value">
 					<a href="images/work/graphic/works_item_07_detail.jpg" class="fh5co-project-item image-popup to-animate">
 						<img src="images/work/graphic/works_item_07.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
@@ -90,26 +96,26 @@
 					</a>
 				</div><!--3-->
 
-				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="images/work/web/works_item_08_detail.png" class="fh5co-project-item image-popup to-animate">
+				<div class="col-md-4 col-sm-6 col-xxs-12 filter-item" data-category="web" data-sort="value">
+					<a href="https://eun08.github.io/proj2/" target="_blank" class="fh5co-project-item to-animate">
 						<img src="images/work/web/works_item_08.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
 						<h2>신한화구</h2>
-						<span>https://eun08.github.io/proj2/</span>
+						<span>WEB</span>
 						</div>
 					</a>
 				</div><!--4-->
-				<div class="col-md-4 col-sm-6 col-xxs-12">
-					<a href="images/work/web/works_item_09_detail.png" class="fh5co-project-item image-popup to-animate">
+				<div class="col-md-4 col-sm-6 col-xxs-12 filter-item" data-category="web" data-sort="value">
+					<a href="https://eun08.github.io/proj1/" target="_blank" class="fh5co-project-item to-animate">
 						<img src="images/work/web/works_item_09.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
 						<h2>스타피부과</h2>
-						<span>https://eun08.github.io/proj1/</span>
+						<span>WEB</span>
 						</div>
 					</a>
 				</div><!--5-->
 
-				<div class="col-md-4 col-sm-6 col-xxs-12">
+				<div class="col-md-4 col-sm-6 col-xxs-12 filter-item" data-category="banner" data-sort="value">
 					<a href="images/work/graphic/works_item_01_detail.png" class="fh5co-project-item image-popup to-animate">
 						<img src="images/work/graphic/works_item_01.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
@@ -119,7 +125,7 @@
 					</a>
 				</div><!--6-->
 
-				<div class="col-md-4 col-sm-6 col-xxs-12">
+				<div class="col-md-4 col-sm-6 col-xxs-12 filter-item" data-category="poster" data-sort="value">
 					<a href="images/work/graphic/works_item_03_detail.jpg" class="fh5co-project-item image-popup to-animate">
 						<img src="images/work/graphic/works_item_03.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
@@ -128,7 +134,7 @@
 						</div>
 					</a>
 				</div><!--7-->
-				<div class="col-md-4 col-sm-6 col-xxs-12">
+				<div class="col-md-4 col-sm-6 col-xxs-12 filter-item" data-category="banner" data-sort="value">
 					<a href="images/work/graphic/works_item_06_detail.jpg" class="fh5co-project-item image-popup to-animate">
 						<img src="images/work/graphic/works_item_06.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
@@ -138,7 +144,7 @@
 					</a>
 				</div><!--8-->
 
-				<div class="col-md-4 col-sm-6 col-xxs-12">
+				<div class="col-md-4 col-sm-6 col-xxs-12 filter-item" data-category="banner" data-sort="value">
 					<a href="images/work/graphic/works_item_04_detail.jpg" class="fh5co-project-item image-popup to-animate">
 						<img src="images/work/graphic/works_item_04.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
@@ -148,7 +154,7 @@
 					</a>
 				</div><!--9-->
 
-				<div class="col-md-4 col-sm-6 col-xxs-12">
+				<div class="col-md-4 col-sm-6 col-xxs-12 filter-item" data-category="composite" data-sort="value">
 					<a href="images/work/graphic/works_item_02_detail.jpg" class="fh5co-project-item image-popup to-animate">
 						<img src="images/work/graphic/works_item_02.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
@@ -157,7 +163,7 @@
 						</div>
 					</a>
 				</div><!--10-->
-				<div class="col-md-4 col-sm-6 col-xxs-12">
+				<div class="col-md-4 col-sm-6 col-xxs-12 filter-item" data-category="banner" data-sort="value">
 					<a href="images/work/graphic/works_item_10_detail.jpg" class="fh5co-project-item image-popup to-animate">
 						<img src="images/work/graphic/works_item_10.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
@@ -167,7 +173,7 @@
 					</a>
 				</div><!--11-->
 
-				<div class="col-md-4 col-sm-6 col-xxs-12">
+				<div class="col-md-4 col-sm-6 col-xxs-12 filter-item" data-category="artwork" data-sort="value">
 					<a href="images/work/artwork/works_item_05_detail.jpg" class="fh5co-project-item image-popup to-animate">
 						<img src="images/work/artwork/works_item_05.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
@@ -177,7 +183,7 @@
 					</a>
 				</div><!--12-->
 				
-				<div class="col-md-4 col-sm-6 col-xxs-12">
+				<div class="col-md-4 col-sm-6 col-xxs-12 filter-item" data-category="artwork" data-sort="value">
 					<a href="images/work/artwork/works_item_12_detail.jpg" class="fh5co-project-item image-popup to-animate">
 						<img src="images/work/artwork/works_item_12.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
@@ -186,7 +192,7 @@
 						</div>
 					</a>
 				</div><!--13-->
-				<div class="col-md-4 col-sm-6 col-xxs-12">
+				<div class="col-md-4 col-sm-6 col-xxs-12 filter-item" data-category="banner" data-sort="value">
 					<a href="images/work/graphic/works_item_13_detail.png" class="fh5co-project-item image-popup to-animate">
 						<img src="images/work/graphic/works_item_13.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
@@ -196,7 +202,7 @@
 					</a>
 				</div><!--14-->
 
-				<div class="col-md-4 col-sm-6 col-xxs-12">
+				<div class="col-md-4 col-sm-6 col-xxs-12 filter-item" data-category="banner" data-sort="value">
 					<a href="images/work/graphic/works_item_14_detail.jpg" class="fh5co-project-item image-popup to-animate">
 						<img src="images/work/graphic/works_item_14.jpg" alt="Image" class="img-responsive">
 						<div class="fh5co-text">
