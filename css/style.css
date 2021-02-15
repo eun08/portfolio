@@ -1,5 +1,5 @@
    	.container{max-width:1280px;margin:0 auto; padding-top: 45px; padding-bottom: 45px;}
-		.row{display:flex;flex-wrap:wrap;justify-content: flex-start;}
+		.row{display:flex;flex-wrap:wrap;justify-content: flex-start; align-content: flex-start;}
 		.row > div{width:calc((100% - 8px) / 3);margin-right:4px;}
 		.row > div:nth-child(3n){margin-right:0}
 

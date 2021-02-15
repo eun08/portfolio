@@ -30,26 +30,21 @@ $(function(){
     })//tag click
 
     // filtering
-	$('.filter li a').click(function(e) {
-		e.preventDefault();
-		var a = $(this).attr('href');
-		a = a.substr(1);
-		$('.gallery a').each(function() {
-		  if (!$('.gallery > div > a').hasClass(a) && a != 'all')
-			$('.gallery > div > a','.row > div').addClass('hide');
-		  else
-			$('.gallery > div > a','.row > div').removeClass('hide');
-		});
-	  
-	  });
-	  /*
-	  $('.gallery a').click(function(e) {
-		e.preventDefault();
-		var $i = $(this);
-		$('.gallery a').not($i).toggleClass('pophide');
-		$i.toggleClass('pop');
-	  });
-		*/
+	  // cache collection of elements so only one dom search needed
+   var $mediaElements = $('.filter-gallery');
+
+$('.filter_link').click(function(e){
+    e.preventDefault();
+    // get the category from the attribute
+    var filterVal = $(this).data('filter');
+
+    if(filterVal === 'all'){
+      $mediaElements.show();
+    }else{
+       // hide all then filter the ones to show
+       $mediaElements.hide().filter('.' + filterVal).show();
+    }
+});
 
 
     
