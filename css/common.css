@@ -125,3 +125,19 @@ button{outline:0}
 #footer div p {align-self: flex-end;
                line-height: 3em;
                color: #bbb;}
+
+
+
+
+/********1360px********/ 
+ @media all and (max-width: 1360px) {
+
+      #wrap #logo {
+            left: 0; 
+            margin-left: 40px;
+           }
+
+      #header #nav { right: 0; margin-right: 40px;
+            }     
+
+ }            

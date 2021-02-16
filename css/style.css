@@ -164,3 +164,17 @@
           top: 80px;
           right: 50%;  margin-right: -640px;
           z-index: 10;}
+
+
+
+/**********1360px***********/
+ @media all and (max-width: 1360px) {
+
+  #header .tag_box {
+    right: 40px;
+    } 
+
+  #wrap .tag_box_fixed .tag_box {    
+    right: 0;  margin-right: 40px;
+    }
+ }         
