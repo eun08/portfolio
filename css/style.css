@@ -54,6 +54,7 @@
 #fh5co-work .section-heading h2 {
   color: #fff;
 }
+
 #fh5co-work .section-heading h2:after {
   background: rgba(255, 255, 255, 0.3);
 }
@@ -152,9 +153,9 @@
   height: 32px;
   } 
 #header .tag_box ul {float: right;}
-#header .tag_box li {float: left; padding-left: 20px;}
+#header .tag_box li {float: left; padding-left: 15px;}
 #header .tag_box li:before {content:'.'; display: inline-block;
-             transform:translate(-10px, -5px);}
+             transform:translate(-8px, -5px);}
 #header .tag_box li:first-child::before{display: none;}                     
 #header .tag_box > ul > li> a.on{color: #222;}
 #header .tag_box > ul > li a:hover {color: #222;}
@@ -169,12 +170,34 @@
 
 /**********1360px***********/
  @media all and (max-width: 1360px) {
-
-  #header .tag_box {
-    right: 40px;
-    } 
-
-  #wrap .tag_box_fixed .tag_box {    
-    right: 0;  margin-right: 40px;
-    }
+  #header .tag_box {right: 40px;}     
+  #wrap .tag_box_fixed .tag_box {right: 0;  margin-right: 40px;}
  }         
+
+ /**********800px***********/
+ @media all and (max-width: 900px) {
+  #fh5co-work .fh5co-project-item .fh5co-text {    
+    padding: 5px 15px;}
+  #fh5co-work .fh5co-project-item .fh5co-text h2 {
+    font-size: 15px;    
+  }
+  #fh5co-work .fh5co-project-item .fh5co-text span {    
+    font-size: 13px;    
+  }
+  
+ }
+ /**********730px***********/
+ @media all and (max-width: 730px) {
+  .row > div{width:calc((100% - 4px) / 2);margin-right:4px;}
+  .row > div:nth-child(3n){margin-right:4px;}
+  .row > div:nth-child(2n){margin-right:0}  
+ }
+/********600px********/ 
+@media all and (max-width: 600px) {
+  #header .tag_box {right: 20px;}     
+  #wrap .tag_box_fixed .tag_box {right: 0;  margin-right: 20px;}
+  #header .tag_box ul {font-size: 12px;}
+  #header .tag_box li {padding-left: 10px;}
+  #header .tag_box li:before {transform:translate(-5px, -5px);}
+  .container{padding-top: 0px; padding-bottom: 0px;}
+}
