@@ -6,13 +6,16 @@
 	<title>허은주 - 포트폴리오</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="css/magnific-popup.css"><!-- 팝업화면 스타일 바꿀거면 지우고 화면에 뜨는 클래명으로 직접 스타일 넣으면 됨-->
+		<link rel="stylesheet" href="css/magnific-popup.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/common.css">
 		<link rel="stylesheet" href="css/sub.css">
 
-    <script src="js/jquery-3.1.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.12.1.min.js"></script> 
+	<script src="js/jquery-3.1.1.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-3.0.0.js"></script>
+	
+
   <!-- 시간차로 올라옴 -->
 	<script src="js/jquery.waypoints.min.js"></script>
 	<script src="js/jquery.stellar.min.js"></script>
@@ -22,6 +25,9 @@
 	<!-- Main JS (Do not remove) -->
 	<script src="js/common.js"></script>
 	<script src="js/main.js"></script>
+
+
+
 	
 
 	<!-- FOR IE9 below -->
@@ -32,23 +38,34 @@
 	</head>
 
 	<body>
-		<div id="wrap" class="active">
-			<div id="logo">
-				<h1>
-					<a href="https://eun08.github.io/portfolio/"><img src="images/logo.svg" alt="로고"></a>
-				</h1>
-			</div>
-			<header id="header">
-				  <nav id="nav">
-					<p>PORTFOLIO</p>
-					<ul class="gnb">
-					  <li><a href="https://eun08.github.io/portfolio/" class="works">WORKS</a></li>
-					  <li><a href="https://eun08.github.io/portfolio/aboutMe" class="about on">ABOUT ME</a></li>
-					  <li><a href="https://eun08.github.io/portfolio/aboutMe#div3" class="contact">CONTACT</a></li>
-					</ul>
-				  </nav>  
-				  
-			</header>
+    <div id="wrap">
+		<div id="logo">
+			<h1>
+				<a href="https://eun08.github.io/portfolio/"><img src="images/logo.svg" alt="로고"></a>
+			</h1>
+		</div>
+		<header id="header">
+			  <nav id="nav">
+				<p>PORTFOLIO</p>
+				<ul class="gnb">
+				  <li><a href="https://eun08.github.io/portfolio/" class="works on">WORKS</a></li>
+				  <li><a href="https://eun08.github.io/portfolio/aboutMe" class="about">ABOUT ME</a></li>
+				  <li><a href="https://eun08.github.io/portfolio/aboutMe#div3" class="contact">CONTACT</a></li>
+				</ul>
+				<div id="mMenu_button">
+					<span></span>					
+				</div>
+			  </nav>  
+			  <div class="tag_box">
+				<ul>				 
+				  <li><a href="#" class="filter_link on" data-filter="all">ALL</a></li>
+				  <li><a href="#" class="filter_link" data-filter="bx">BX</a></li>
+				  <li><a href="#" class="filter_link" data-filter="web">WEB</a></li>
+				  <li><a href="#" class="filter_link" data-filter="graphic">GRAPHIC</a></li> 
+				  <li><a href="#" class="filter_link" data-filter="artwork">ARTWORK</a></li>
+				</ul>
+			  </div>
+		</header>	
     <section id="about">
 		<div class="container">
 			<div id="div1"><img src="images/illust.jpg" alt="자기소개그림"></div>
@@ -67,12 +84,23 @@
 
 		</div>
 	</section>
-    
 	<footer id="footer">
 		<div>
 		  <p>© Designer. All Rights Reserved.</p>
 		</div>
-	</footer>
+	  </footer>
+	<div id="mMemu">
+		<div id="mMenu_bg">
+			<div id="mMenu_close">
+				<span></span>
+			</div>
+		</div>
+		<ul>
+			<li><a href="#">WORKS</a></li>
+			<li><a href="#">ABOUT ME</a></li>
+			<li><a href="#">CONTACT</a></li>
+		</ul>
+	</div>  
 	</div><!--wrap-->	
 
 	</body>
