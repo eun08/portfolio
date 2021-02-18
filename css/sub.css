@@ -1,48 +1,71 @@
-/*******************************sub_aboutMe**********************************************/
+/*******************************aboutMe**********************************************/
 #wrap {transition: 2s;}
 #wrap.active {background-color:#f9effe;}
 #wrap section {width: 100%;  height: 100%;}
-#wrap #about .container {display: flex;
+#about .container {display: flex;
                   flex-direction: column;
                   box-sizing: border-box;
                   padding-top: 0;}
-#wrap #about .container div {width: 100%; height: 638px;
+#about .container div {width: 100%; height: 638px;
                        margin-bottom: 4px;
                        background-color: #fff;
                        text-align: center;}
 
-#wrap #about .container div img {width: 100%;}
+#about .container div img {width: 100%;}
 
-#wrap #about .contact {font-size: 1.25rem;}
+#about .contact {font-size: 1.25rem;}
 
-#wrap #about .about_me p.intro {margin-top: 150px;
+#about .about_me p.intro {margin-top: 150px;
                                 font-size: 3rem;
                                 font-family: 'InkLipquid';}
-#wrap #about .about_me p.intro_txt {margin-top: 30px; font-size: 1.25rem; line-height: 2em;}
-#wrap #about .about_me .resume {width: 100px; height: 100px; 
+#about .about_me p.intro_txt {margin-top: 30px; font-size: 1.25rem; line-height: 2em;}
+#about .about_me .resume {width: 100px; height: 100px; 
                                 border-radius: 50%; background-color: #F2E2FF;
                                 margin: 0 auto; margin-top: 50px;
                                 }
-#wrap #about .about_me .resume a {display: block; width: 100%; height: 100%;
-                                  transform: translateY(38%);}                                          
-#wrap #about .contact p {margin-bottom: 10px;}
-#wrap #about .contact p.illust {display: inline-block; width: 320px;
+#about .about_me .resume a {display: block; 
+                            width: 100%; height: 100%;
+                            position: relative;}
+#about .about_me .resume span {position: absolute; top: 37%; left: 27%;}                                    
+#about .contact p {margin-bottom: 10px;}
+#about .contact p.illust {display: inline-block; width: 320px;
                                 margin-top: 80px;
                                 margin-bottom: 50px;}
-#wrap #about .contact span {margin-left: 10px;}
+#about .contact span {margin-left: 10px;}
 
 
         
-/*******************************bx**********************************************/
+/*******************************bx_detail**********************************************/
 #bx .container {display: flex;
                 justify-content: center;}
 #bx .container p {width: 93%;}
 #bx .container p img {width: 100%;}
 
 
-/*******************************star**********************************************/
+/*******************************star_detail**********************************************/
 #star .container {display: flex;
-    justify-content: center;}
-#star .container p {width: 100%; margin: 0 40px;}
-#star .container p img {width: 100%;}
-
+                  justify-content: center;}
+#star .container .star-content {width: 100%; margin: 0 40px;                                 
+                                position: relative;
+                                display: flex;
+                                justify-content: center;
+                                color: #fff;
+                                font-size: 0.8rem;
+                                font-weight: 100;
+                                letter-spacing: .5em;}
+#star .container .star-content img {width: 100%;}
+#star .container .star-content > div:hover {background-color: #fff; 
+                                            color:#B2509E; font-weight: 500;}
+#star .container .star_link,.star_back {position: absolute;}
+#star .container .star_link {top: 22.5%;}
+#star .container .star_link > a {display: inline-block; 
+                                 padding: 10px 37px 10px 40px; border: 1px solid #fff;}
+#star .container .star_back {bottom: 2.7%;
+                             width: 70px; height: 70px;
+                             border: 1px solid #fff;
+                             border-radius: 50%;}
+#star .container .star_back a {display: block; 
+                               width: 100%; height: 100%;}
+#star .container .star_back span {position: absolute; top: 35%; left: 13%;}
+#star .container .star-content p {position: absolute; bottom: 0.8%;
+                                  letter-spacing: 0;}                             
