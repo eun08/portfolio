@@ -37,25 +37,25 @@
     }
 	$('.gnb > li > a.about').click(function(){
 		$('.gnb li a').removeClass('on');
-		//$('#wrap').addClass('active');
+		$('#wrap').addClass('active');
 		var about_h = $('#div1').offset().top;
 	
 		if($(document).scrollTop() >= 700){
 		  $("html,body").stop().animate({scrollTop:about_h});
           $('.about').addClass('on');
-		  //$('#wrap').addClass('active');
+		  $('#wrap').addClass('active');
         } else {
 		    $('.about').addClass('on');
             }
        })
 	$('.gnb > li > a.contact').click(function(){
 		$('.gnb li a').removeClass('on');
-		//$('#wrap').addClass('active');
+		$('#wrap').addClass('active');
 		var contact_h = $('#div3').offset().top;
 	
 		if($(document).scrollTop() >= 700){
           $('.contact').addClass('on');
-		  //$('#wrap').addClass('active');
+		  $('#wrap').addClass('active');
         } else {
 		    $("html,body").stop().animate({scrollTop:contact_h});
 			$('.contact').addClass('on');
@@ -117,6 +117,10 @@
 				   <div class="resume">
 					<a href="#" target="_blank"><span>이력서</span></a>					
 				</div>-->
+				<div class="intro_illust">
+					<img src="images/illust-book.png" alt="book illust">
+
+				</div>
 			</div>
 			<div id="div3" class="contact">
 				<p class="illust"><img src="images/illust-cup.jpg" alt="cup illust"></p>

@@ -18,9 +18,9 @@ $(function(){
         $('#wrap').addClass('active');
     })*/
 
-    $('.gnb > li > a.works').click(function(){
+    /*$('.gnb > li > a.works').click(function(){
         $('#wrap').removeClass('active');
-    })
+    })*/
 
 
     $('.tag_box ul > li > a').click(function(){
